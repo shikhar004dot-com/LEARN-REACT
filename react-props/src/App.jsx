@@ -2,6 +2,7 @@ import College from "./College";
 import Student from "./Student";
 import User from "./User"
 import { useState } from "react";
+import Wrapper from "./Wrapper";
 function App(){
   let name="Shikhar Srivastava"
   let userObject={
@@ -25,6 +26,9 @@ function App(){
       <User props={userObject}/>
       <button onClick={changeStudent}>Change Student</button>
       {Student && <Student name={student}/>}
+      <Wrapper>
+        <h1>Hello Everyone</h1>
+      </Wrapper>
       <hr/>
      
     </div>
